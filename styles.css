@@ -529,6 +529,12 @@ h2 em {
   margin-top: -70px;
 }
 
+.gallery-card-feature {
+  grid-column: 1 / -1;
+  width: min(100%, 820px);
+  justify-self: center;
+}
+
 .gallery-image {
   position: relative;
   display: block;
@@ -1094,6 +1100,11 @@ h2 em {
   .gallery-card-large .gallery-image,
   .gallery-card:not(.gallery-card-large) .gallery-image {
     aspect-ratio: 1.1;
+  }
+
+  .gallery-card-feature {
+    grid-column: auto;
+    width: auto;
   }
 
   .gallery-caption h3 {
